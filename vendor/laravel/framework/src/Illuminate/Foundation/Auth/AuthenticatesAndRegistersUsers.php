@@ -47,8 +47,8 @@ trait AuthenticatesAndRegistersUsers {
 			);
 		}
 
-		$this->auth->login($this->registrar->create($request->all()));
-
+		//$this->auth->login($this->registrar->create($request->all()));
+		$this->registrar->create($request->all());
 		return redirect($this->redirectPath());
 	}
 
@@ -122,7 +122,7 @@ trait AuthenticatesAndRegistersUsers {
 			return $this->redirectPath;
 		}
 
-		return property_exists($this, 'redirectTo') ? $this->redirectTo : '/home';
+		return property_exists($this, 'redirectTo') ? $this->redirectTo : '/admin';
 	}
 
 	/**

@@ -106,7 +106,7 @@ trait ResetsPasswords {
 
 			$user->save();
 
-			$this->auth->login($user);
+			//$this->auth->login($user);
 		});
 
 		switch ($response)
@@ -133,7 +133,7 @@ trait ResetsPasswords {
 			return $this->redirectPath;
 		}
 
-		return property_exists($this, 'redirectTo') ? $this->redirectTo : '/home';
+		return property_exists($this, 'redirectTo') ? $this->redirectTo : '/admin';
 	}
 
 }
