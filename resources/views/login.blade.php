@@ -26,10 +26,10 @@
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li><a href="/admin">To add</a></li>
+					<li><a href="#">To add</a></li>
 				</ul>
 				<ul class="nav navbar-nav">
-					<li><a href="/admin/comments">To add</a></li>
+					<li><a href="#">To add</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
